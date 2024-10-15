@@ -16,10 +16,16 @@ const WeatherList: React.FC = () => {
   }, [days]);
 
   if (loading) {
-    return <h1 className="text-center  text-8xl bg-background">Loading...</h1>;
+    return (
+      <h1 className="text-center  text-8xl bg-background h-screen">
+        Loading...
+      </h1>
+    );
   }
   if (error) {
-    return <h1 className="text-center  text-8xl bg-background">{error}</h1>;
+    return (
+      <h1 className="text-center  text-8xl bg-background h-screen">{error}</h1>
+    );
   }
 
   return (
