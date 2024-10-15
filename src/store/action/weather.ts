@@ -9,7 +9,7 @@ export const fetchWeather = (days = 14) => {
       dispatch({ type: WeatherActionTypes.FETCH_WEATHER });
       const { latitude, longitude } = await getCurrentLocation();
       const responce = await axios.get(
-        "http://api.weatherapi.com/v1/forecast.json",
+        "https://api.weatherapi.com/v1/forecast.json",
         {
           params: {
             key: "9462a8d9d4e54cd1862181752240910",
