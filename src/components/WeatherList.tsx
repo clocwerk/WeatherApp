@@ -29,7 +29,8 @@ const WeatherList: React.FC = () => {
   }
 
   return (
-    <div className="text-center bg-background p-8 h-screen">
+    <div  style={{ height: "100%", backgroundColor: "var(--background)" }}
+      className="text-center bg-background p-8 h-screen">
       <ThemeToggle />
       <h1>Weather Forecast</h1>
       {weather.map((forecast, index) => (
